@@ -1,0 +1,68 @@
+{"time": 1788823555.3041048, "event": "intake", "state": "intake"}
+{"time": 1788823555.309671, "event": "model_call", "state": "planning", "task": "root", "role": "planner", "model": "mock"}
+{"time": 1788823555.3403273, "event": "decomposed", "state": "planning", "task": "root", "children": ["root.research", "root.analysis"]}
+{"time": 1788823555.3433247, "event": "model_call", "state": "planning", "task": "root.research", "role": "planner", "model": "mock"}
+{"time": 1788823555.3725467, "event": "decomposed", "state": "planning", "task": "root.research", "children": ["root.research.facts"]}
+{"time": 1788823555.3775434, "event": "model_call", "state": "planning", "task": "root.analysis", "role": "planner", "model": "mock"}
+{"time": 1788823555.4028149, "event": "started", "state": "executing", "task": "root.analysis"}
+{"time": 1788823555.4078174, "event": "routed", "state": "executing", "task": "root.analysis", "worker": "code_data"}
+{"time": 1788823555.410814, "event": "model_call", "state": "executing", "task": "root.analysis", "role": "code_data", "model": "mock"}
+{"time": 1788823555.4498413, "event": "artifact_saved", "state": "executing", "task": "root.analysis", "artifact": "root.analysis.r0.candidate_a"}
+{"time": 1788823555.4518416, "event": "model_call", "state": "executing", "task": "root.analysis", "role": "code_data", "model": "mock"}
+{"time": 1788823555.4804494, "event": "artifact_saved", "state": "executing", "task": "root.analysis", "artifact": "root.analysis.r0.candidate_b"}
+{"time": 1788823555.483447, "event": "model_call", "state": "executing", "task": "root.analysis", "role": "judge", "model": "mock"}
+{"time": 1788823555.5331187, "event": "artifact_saved", "state": "executing", "task": "root.analysis", "artifact": "root.analysis.r0.judge"}
+{"time": 1788823555.536122, "event": "model_call", "state": "executing", "task": "root.analysis", "role": "critic", "model": "mock"}
+{"time": 1788823555.576524, "event": "reviewed", "state": "executing", "task": "root.analysis", "review": {"accepted": false, "issues": ["State the missing evidence and a concrete next step"]}}
+{"time": 1788823555.579516, "event": "repair_created", "state": "executing", "task": "root.analysis", "repair": "root.analysis.repair1"}
+{"time": 1788823555.583513, "event": "model_call", "state": "planning", "task": "root.research.facts", "role": "planner", "model": "mock"}
+{"time": 1788823555.6193228, "event": "started", "state": "executing", "task": "root.research.facts"}
+{"time": 1788823555.627844, "event": "routed", "state": "executing", "task": "root.research.facts", "worker": "research"}
+{"time": 1788823555.6318424, "event": "model_call", "state": "executing", "task": "root.research.facts", "role": "research", "model": "mock"}
+{"time": 1788823555.63584, "event": "started", "state": "executing", "task": "root.analysis.repair1"}
+{"time": 1788823555.640837, "event": "routed", "state": "executing", "task": "root.analysis.repair1", "worker": "code_data"}
+{"time": 1788823555.6448348, "event": "model_call", "state": "executing", "task": "root.analysis.repair1", "role": "code_data", "model": "mock"}
+{"time": 1788823555.667935, "event": "artifact_saved", "state": "executing", "task": "root.research.facts", "artifact": "root.research.facts.r0.candidate_a"}
+{"time": 1788823555.672932, "event": "model_call", "state": "executing", "task": "root.research.facts", "role": "research", "model": "mock"}
+{"time": 1788823555.6779287, "event": "artifact_saved", "state": "executing", "task": "root.analysis.repair1", "artifact": "root.analysis.repair1.r1.candidate_a"}
+{"time": 1788823555.6809263, "event": "model_call", "state": "executing", "task": "root.analysis.repair1", "role": "code_data", "model": "mock"}
+{"time": 1788823555.7147136, "event": "artifact_saved", "state": "executing", "task": "root.research.facts", "artifact": "root.research.facts.r0.candidate_b"}
+{"time": 1788823555.7172222, "event": "model_call", "state": "executing", "task": "root.research.facts", "role": "judge", "model": "mock"}
+{"time": 1788823555.7242126, "event": "artifact_saved", "state": "executing", "task": "root.analysis.repair1", "artifact": "root.analysis.repair1.r1.candidate_b"}
+{"time": 1788823555.7283614, "event": "model_call", "state": "executing", "task": "root.analysis.repair1", "role": "judge", "model": "mock"}
+{"time": 1788823555.761118, "event": "artifact_saved", "state": "executing", "task": "root.research.facts", "artifact": "root.research.facts.r0.judge"}
+{"time": 1788823555.7641177, "event": "model_call", "state": "executing", "task": "root.research.facts", "role": "critic", "model": "mock"}
+{"time": 1788823555.7691147, "event": "artifact_saved", "state": "executing", "task": "root.analysis.repair1", "artifact": "root.analysis.repair1.r1.judge"}
+{"time": 1788823555.7751114, "event": "model_call", "state": "executing", "task": "root.analysis.repair1", "role": "critic", "model": "mock"}
+{"time": 1788823555.791312, "event": "reviewed", "state": "executing", "task": "root.research.facts", "review": {"accepted": true, "issues": []}}
+{"time": 1788823555.7963095, "event": "artifact_saved", "state": "executing", "task": "root.research.facts", "artifact": "root.research.facts.r0.accepted"}
+{"time": 1788823555.8003063, "event": "completed", "state": "executing", "task": "root.research.facts"}
+{"time": 1788823555.8073032, "event": "reviewed", "state": "executing", "task": "root.analysis.repair1", "review": {"accepted": true, "issues": []}}
+{"time": 1788823555.8122995, "event": "artifact_saved", "state": "executing", "task": "root.analysis.repair1", "artifact": "root.analysis.repair1.r1.accepted"}
+{"time": 1788823555.816297, "event": "completed", "state": "executing", "task": "root.analysis.repair1"}
+{"time": 1788823555.8242915, "event": "repair_integrated", "state": "scheduling", "task": "root.analysis"}
+{"time": 1788823555.8292892, "event": "started", "state": "executing", "task": "root.research"}
+{"time": 1788823555.833286, "event": "routed", "state": "executing", "task": "root.research", "worker": "research"}
+{"time": 1788823555.840283, "event": "model_call", "state": "executing", "task": "root.research", "role": "research", "model": "mock"}
+{"time": 1788823555.872358, "event": "artifact_saved", "state": "executing", "task": "root.research", "artifact": "root.research.r0.candidate_a"}
+{"time": 1788823555.877607, "event": "model_call", "state": "executing", "task": "root.research", "role": "research", "model": "mock"}
+{"time": 1788823555.9176207, "event": "artifact_saved", "state": "executing", "task": "root.research", "artifact": "root.research.r0.candidate_b"}
+{"time": 1788823555.9246173, "event": "model_call", "state": "executing", "task": "root.research", "role": "judge", "model": "mock"}
+{"time": 1788823555.9621906, "event": "artifact_saved", "state": "executing", "task": "root.research", "artifact": "root.research.r0.judge"}
+{"time": 1788823555.966189, "event": "model_call", "state": "executing", "task": "root.research", "role": "critic", "model": "mock"}
+{"time": 1788823556.008299, "event": "reviewed", "state": "executing", "task": "root.research", "review": {"accepted": true, "issues": []}}
+{"time": 1788823556.0142953, "event": "artifact_saved", "state": "executing", "task": "root.research", "artifact": "root.research.r0.accepted"}
+{"time": 1788823556.0182922, "event": "completed", "state": "executing", "task": "root.research"}
+{"time": 1788823556.0262494, "event": "started", "state": "executing", "task": "root"}
+{"time": 1788823556.0302389, "event": "routed", "state": "executing", "task": "root", "worker": "general"}
+{"time": 1788823556.034749, "event": "model_call", "state": "executing", "task": "root", "role": "general", "model": "mock"}
+{"time": 1788823556.0723536, "event": "artifact_saved", "state": "executing", "task": "root", "artifact": "root.r0.candidate_a"}
+{"time": 1788823556.0774598, "event": "model_call", "state": "executing", "task": "root", "role": "general", "model": "mock"}
+{"time": 1788823556.1160843, "event": "artifact_saved", "state": "executing", "task": "root", "artifact": "root.r0.candidate_b"}
+{"time": 1788823556.1256647, "event": "model_call", "state": "executing", "task": "root", "role": "judge", "model": "mock"}
+{"time": 1788823556.1625316, "event": "artifact_saved", "state": "executing", "task": "root", "artifact": "root.r0.judge"}
+{"time": 1788823556.1668859, "event": "model_call", "state": "executing", "task": "root", "role": "critic", "model": "mock"}
+{"time": 1788823556.209822, "event": "reviewed", "state": "executing", "task": "root", "review": {"accepted": true, "issues": []}}
+{"time": 1788823556.2168176, "event": "artifact_saved", "state": "executing", "task": "root", "artifact": "root.r0.accepted"}
+{"time": 1788823556.2268114, "event": "completed", "state": "executing", "task": "root"}
+{"time": 1788823556.2338068, "event": "finished", "state": "complete"}

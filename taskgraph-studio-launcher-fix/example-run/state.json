@@ -1,0 +1,958 @@
+{
+  "state": "complete",
+  "contract": {
+    "goal": "Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.",
+    "success_criteria": [
+      "Compare the park entrance and community center against access, maintenance, and weather exposure",
+      "Provide a budget allocation under 500 dollars",
+      "Identify missing permissions and evidence before recommending installation"
+    ],
+    "constraints": [
+      "Budget is 500 dollars",
+      "Do not make purchases or contact anyone"
+    ],
+    "context": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+    "max_tasks": 40,
+    "max_depth": 3,
+    "max_repairs": 2,
+    "parallelism": 3,
+    "max_calls": 100,
+    "timeout": 90,
+    "disagreement": true
+  },
+  "calls": 24,
+  "tasks": {
+    "root": {
+      "id": "root",
+      "title": "Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.",
+      "capability": "general",
+      "deps": [
+        "root.research",
+        "root.analysis"
+      ],
+      "depth": 0,
+      "parent": null,
+      "status": "done",
+      "planned": true,
+      "revision": 0,
+      "feedback": [],
+      "output": {
+        "answer": "MOCK DEMONSTRATION: Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.\nGoal: Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.\nContext: The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.\nNext step: collect source material and rerun with a live adapter.\nDependency artifacts considered: 2.",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Further evidence is needed before a substantive recommendation.",
+            "confidence": 0.5,
+            "evidence": [
+              "e1"
+            ],
+            "assumptions": [
+              "Mock execution is illustrative."
+            ],
+            "contradicts": []
+          }
+        ],
+        "evidence": [
+          {
+            "id": "e1",
+            "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+            "source": "user-provided context"
+          }
+        ],
+        "assumptions": [
+          "Mock execution is illustrative."
+        ],
+        "limitations": [
+          "Mock output is not substantive research or analysis."
+        ]
+      }
+    },
+    "root.research": {
+      "id": "root.research",
+      "title": "Identify facts and missing evidence",
+      "capability": "research",
+      "deps": [
+        "root.research.facts"
+      ],
+      "depth": 1,
+      "parent": "root",
+      "status": "done",
+      "planned": true,
+      "revision": 0,
+      "feedback": [],
+      "output": {
+        "answer": "MOCK DEMONSTRATION: Identify facts and missing evidence\nGoal: Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.\nContext: The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.\nNext step: collect source material and rerun with a live adapter.\nDependency artifacts considered: 1.",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Further evidence is needed before a substantive recommendation.",
+            "confidence": 0.5,
+            "evidence": [
+              "e1"
+            ],
+            "assumptions": [
+              "Mock execution is illustrative."
+            ],
+            "contradicts": []
+          }
+        ],
+        "evidence": [
+          {
+            "id": "e1",
+            "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+            "source": "user-provided context"
+          }
+        ],
+        "assumptions": [
+          "Mock execution is illustrative."
+        ],
+        "limitations": [
+          "Mock output is not substantive research or analysis."
+        ]
+      }
+    },
+    "root.analysis": {
+      "id": "root.analysis",
+      "title": "Analyze options and implementation",
+      "capability": "code_data",
+      "deps": [
+        "root.analysis.repair1"
+      ],
+      "depth": 1,
+      "parent": "root",
+      "status": "done",
+      "planned": true,
+      "revision": 0,
+      "feedback": [],
+      "output": {
+        "answer": "MOCK DEMONSTRATION: Repair: Analyze options and implementation\nGoal: Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.\nContext: The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.\nNext step: collect source material and rerun with a live adapter.\nDependency artifacts considered: 0.",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Further evidence is needed before a substantive recommendation.",
+            "confidence": 0.5,
+            "evidence": [
+              "e1"
+            ],
+            "assumptions": [
+              "Mock execution is illustrative."
+            ],
+            "contradicts": []
+          }
+        ],
+        "evidence": [
+          {
+            "id": "e1",
+            "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+            "source": "user-provided context"
+          }
+        ],
+        "assumptions": [
+          "Mock execution is illustrative."
+        ],
+        "limitations": [
+          "Mock output is not substantive research or analysis."
+        ]
+      }
+    },
+    "root.research.facts": {
+      "id": "root.research.facts",
+      "title": "Extract facts from supplied context",
+      "capability": "research",
+      "deps": [],
+      "depth": 2,
+      "parent": "root.research",
+      "status": "done",
+      "planned": true,
+      "revision": 0,
+      "feedback": [],
+      "output": {
+        "answer": "MOCK DEMONSTRATION: Extract facts from supplied context\nGoal: Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.\nContext: The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.\nNext step: collect source material and rerun with a live adapter.\nDependency artifacts considered: 0.",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Further evidence is needed before a substantive recommendation.",
+            "confidence": 0.5,
+            "evidence": [
+              "e1"
+            ],
+            "assumptions": [
+              "Mock execution is illustrative."
+            ],
+            "contradicts": []
+          }
+        ],
+        "evidence": [
+          {
+            "id": "e1",
+            "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+            "source": "user-provided context"
+          }
+        ],
+        "assumptions": [
+          "Mock execution is illustrative."
+        ],
+        "limitations": [
+          "Mock output is not substantive research or analysis."
+        ]
+      }
+    },
+    "root.analysis.repair1": {
+      "id": "root.analysis.repair1",
+      "title": "Repair: Analyze options and implementation",
+      "capability": "code_data",
+      "deps": [],
+      "depth": 1,
+      "parent": "root.analysis",
+      "status": "done",
+      "planned": true,
+      "revision": 1,
+      "feedback": [
+        "State the missing evidence and a concrete next step",
+        "Prior candidate: {\"answer\": \"MOCK DEMONSTRATION: Analyze options and implementation\\nGoal: Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.\\nContext: The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.\\nNext step: collect source material and rerun with a live adapter.\\nDependency artifacts considered: 0.\", \"claims\": [{\"id\": \"c1\", \"text\": \"Further evidence is needed before a substantive recommendation.\", \"confidence\": 0.5, \"evidence\": [\"e1\"], \"assumptions\": [\"Mock execution is illustrative.\"], \"contradicts\": []}], \"evidence\": [{\"id\": \"e1\", \"text\": \"The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.\", \"source\": \"user-provided context\"}], \"assumptions\": [\"Mock execution is illustrative.\"], \"limitations\": [\"Mock output is not substantive research or analysis.\"]}"
+      ],
+      "output": {
+        "answer": "MOCK DEMONSTRATION: Repair: Analyze options and implementation\nGoal: Create a practical plan for a community book-sharing library, compare two locations, and recommend next steps.\nContext: The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.\nNext step: collect source material and rerun with a live adapter.\nDependency artifacts considered: 0.",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Further evidence is needed before a substantive recommendation.",
+            "confidence": 0.5,
+            "evidence": [
+              "e1"
+            ],
+            "assumptions": [
+              "Mock execution is illustrative."
+            ],
+            "contradicts": []
+          }
+        ],
+        "evidence": [
+          {
+            "id": "e1",
+            "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+            "source": "user-provided context"
+          }
+        ],
+        "assumptions": [
+          "Mock execution is illustrative."
+        ],
+        "limitations": [
+          "Mock output is not substantive research or analysis."
+        ]
+      }
+    }
+  },
+  "reasoning": {
+    "nodes": {
+      "root.analysis.r0.candidate_a:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.candidate_a",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.analysis.r0.candidate_a:assumption:0": {
+        "kind": "assumption",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.candidate_a",
+        "text": "Mock execution is illustrative."
+      },
+      "root.analysis.r0.candidate_a:claim:c1": {
+        "kind": "claim",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.candidate_a",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.analysis.r0.candidate_b:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.candidate_b",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.analysis.r0.candidate_b:assumption:0": {
+        "kind": "assumption",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.candidate_b",
+        "text": "Mock execution is illustrative."
+      },
+      "root.analysis.r0.candidate_b:claim:c1": {
+        "kind": "claim",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.candidate_b",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.analysis.r0.judge:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.judge",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.analysis.r0.judge:assumption:0": {
+        "kind": "assumption",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.judge",
+        "text": "Mock execution is illustrative."
+      },
+      "root.analysis.r0.judge:claim:c1": {
+        "kind": "claim",
+        "task": "root.analysis",
+        "artifact": "root.analysis.r0.judge",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.facts.r0.candidate_a:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.candidate_a",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.facts.r0.candidate_a:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.candidate_a",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.facts.r0.candidate_a:claim:c1": {
+        "kind": "claim",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.candidate_a",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.analysis.repair1.r1.candidate_a:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.candidate_a",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.analysis.repair1.r1.candidate_a:assumption:0": {
+        "kind": "assumption",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.candidate_a",
+        "text": "Mock execution is illustrative."
+      },
+      "root.analysis.repair1.r1.candidate_a:claim:c1": {
+        "kind": "claim",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.candidate_a",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.facts.r0.candidate_b:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.candidate_b",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.facts.r0.candidate_b:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.candidate_b",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.facts.r0.candidate_b:claim:c1": {
+        "kind": "claim",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.candidate_b",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.analysis.repair1.r1.candidate_b:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.candidate_b",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.analysis.repair1.r1.candidate_b:assumption:0": {
+        "kind": "assumption",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.candidate_b",
+        "text": "Mock execution is illustrative."
+      },
+      "root.analysis.repair1.r1.candidate_b:claim:c1": {
+        "kind": "claim",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.candidate_b",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.facts.r0.judge:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.judge",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.facts.r0.judge:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.judge",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.facts.r0.judge:claim:c1": {
+        "kind": "claim",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.judge",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.analysis.repair1.r1.judge:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.judge",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.analysis.repair1.r1.judge:assumption:0": {
+        "kind": "assumption",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.judge",
+        "text": "Mock execution is illustrative."
+      },
+      "root.analysis.repair1.r1.judge:claim:c1": {
+        "kind": "claim",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.judge",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.facts.r0.accepted:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.accepted",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.facts.r0.accepted:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.accepted",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.facts.r0.accepted:claim:c1": {
+        "kind": "claim",
+        "task": "root.research.facts",
+        "artifact": "root.research.facts.r0.accepted",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.analysis.repair1.r1.accepted:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.accepted",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.analysis.repair1.r1.accepted:assumption:0": {
+        "kind": "assumption",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.accepted",
+        "text": "Mock execution is illustrative."
+      },
+      "root.analysis.repair1.r1.accepted:claim:c1": {
+        "kind": "claim",
+        "task": "root.analysis.repair1",
+        "artifact": "root.analysis.repair1.r1.accepted",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.r0.candidate_a:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research",
+        "artifact": "root.research.r0.candidate_a",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.r0.candidate_a:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research",
+        "artifact": "root.research.r0.candidate_a",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.r0.candidate_a:claim:c1": {
+        "kind": "claim",
+        "task": "root.research",
+        "artifact": "root.research.r0.candidate_a",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.r0.candidate_b:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research",
+        "artifact": "root.research.r0.candidate_b",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.r0.candidate_b:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research",
+        "artifact": "root.research.r0.candidate_b",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.r0.candidate_b:claim:c1": {
+        "kind": "claim",
+        "task": "root.research",
+        "artifact": "root.research.r0.candidate_b",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.r0.judge:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research",
+        "artifact": "root.research.r0.judge",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.r0.judge:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research",
+        "artifact": "root.research.r0.judge",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.r0.judge:claim:c1": {
+        "kind": "claim",
+        "task": "root.research",
+        "artifact": "root.research.r0.judge",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.research.r0.accepted:evidence:e1": {
+        "kind": "evidence",
+        "task": "root.research",
+        "artifact": "root.research.r0.accepted",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.research.r0.accepted:assumption:0": {
+        "kind": "assumption",
+        "task": "root.research",
+        "artifact": "root.research.r0.accepted",
+        "text": "Mock execution is illustrative."
+      },
+      "root.research.r0.accepted:claim:c1": {
+        "kind": "claim",
+        "task": "root.research",
+        "artifact": "root.research.r0.accepted",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.r0.candidate_a:evidence:e1": {
+        "kind": "evidence",
+        "task": "root",
+        "artifact": "root.r0.candidate_a",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.r0.candidate_a:assumption:0": {
+        "kind": "assumption",
+        "task": "root",
+        "artifact": "root.r0.candidate_a",
+        "text": "Mock execution is illustrative."
+      },
+      "root.r0.candidate_a:claim:c1": {
+        "kind": "claim",
+        "task": "root",
+        "artifact": "root.r0.candidate_a",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.r0.candidate_b:evidence:e1": {
+        "kind": "evidence",
+        "task": "root",
+        "artifact": "root.r0.candidate_b",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.r0.candidate_b:assumption:0": {
+        "kind": "assumption",
+        "task": "root",
+        "artifact": "root.r0.candidate_b",
+        "text": "Mock execution is illustrative."
+      },
+      "root.r0.candidate_b:claim:c1": {
+        "kind": "claim",
+        "task": "root",
+        "artifact": "root.r0.candidate_b",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.r0.judge:evidence:e1": {
+        "kind": "evidence",
+        "task": "root",
+        "artifact": "root.r0.judge",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.r0.judge:assumption:0": {
+        "kind": "assumption",
+        "task": "root",
+        "artifact": "root.r0.judge",
+        "text": "Mock execution is illustrative."
+      },
+      "root.r0.judge:claim:c1": {
+        "kind": "claim",
+        "task": "root",
+        "artifact": "root.r0.judge",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      },
+      "root.r0.accepted:evidence:e1": {
+        "kind": "evidence",
+        "task": "root",
+        "artifact": "root.r0.accepted",
+        "text": "The community center has volunteers available twice a week and a covered entrance. The park is open daily but no maintenance volunteer is confirmed. These are user-supplied facts, not independently verified. Actual construction costs and permission requirements are unknown.",
+        "source": "user-provided context",
+        "verified": false
+      },
+      "root.r0.accepted:assumption:0": {
+        "kind": "assumption",
+        "task": "root",
+        "artifact": "root.r0.accepted",
+        "text": "Mock execution is illustrative."
+      },
+      "root.r0.accepted:claim:c1": {
+        "kind": "claim",
+        "task": "root",
+        "artifact": "root.r0.accepted",
+        "text": "Further evidence is needed before a substantive recommendation.",
+        "confidence": 0.5
+      }
+    },
+    "edges": [
+      {
+        "from": "root.analysis.r0.candidate_a:claim:c1",
+        "to": "root.analysis.r0.candidate_a:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.analysis.r0.candidate_a:claim:c1",
+        "to": "root.analysis.r0.candidate_a:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.analysis.r0.candidate_b:claim:c1",
+        "to": "root.analysis.r0.candidate_b:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.analysis.r0.candidate_b:claim:c1",
+        "to": "root.analysis.r0.candidate_b:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.analysis.r0.judge:claim:c1",
+        "to": "root.analysis.r0.judge:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.analysis.r0.judge:claim:c1",
+        "to": "root.analysis.r0.judge:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.facts.r0.candidate_a:claim:c1",
+        "to": "root.research.facts.r0.candidate_a:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.facts.r0.candidate_a:claim:c1",
+        "to": "root.research.facts.r0.candidate_a:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.analysis.repair1.r1.candidate_a:claim:c1",
+        "to": "root.analysis.repair1.r1.candidate_a:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.analysis.repair1.r1.candidate_a:claim:c1",
+        "to": "root.analysis.repair1.r1.candidate_a:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.facts.r0.candidate_b:claim:c1",
+        "to": "root.research.facts.r0.candidate_b:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.facts.r0.candidate_b:claim:c1",
+        "to": "root.research.facts.r0.candidate_b:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.analysis.repair1.r1.candidate_b:claim:c1",
+        "to": "root.analysis.repair1.r1.candidate_b:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.analysis.repair1.r1.candidate_b:claim:c1",
+        "to": "root.analysis.repair1.r1.candidate_b:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.facts.r0.judge:claim:c1",
+        "to": "root.research.facts.r0.judge:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.facts.r0.judge:claim:c1",
+        "to": "root.research.facts.r0.judge:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.analysis.repair1.r1.judge:claim:c1",
+        "to": "root.analysis.repair1.r1.judge:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.analysis.repair1.r1.judge:claim:c1",
+        "to": "root.analysis.repair1.r1.judge:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.facts.r0.accepted:claim:c1",
+        "to": "root.research.facts.r0.accepted:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.facts.r0.accepted:claim:c1",
+        "to": "root.research.facts.r0.accepted:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.analysis.repair1.r1.accepted:claim:c1",
+        "to": "root.analysis.repair1.r1.accepted:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.analysis.repair1.r1.accepted:claim:c1",
+        "to": "root.analysis.repair1.r1.accepted:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.r0.candidate_a:claim:c1",
+        "to": "root.research.r0.candidate_a:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.r0.candidate_a:claim:c1",
+        "to": "root.research.r0.candidate_a:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.r0.candidate_b:claim:c1",
+        "to": "root.research.r0.candidate_b:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.r0.candidate_b:claim:c1",
+        "to": "root.research.r0.candidate_b:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.r0.judge:claim:c1",
+        "to": "root.research.r0.judge:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.r0.judge:claim:c1",
+        "to": "root.research.r0.judge:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.research.r0.accepted:claim:c1",
+        "to": "root.research.r0.accepted:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.research.r0.accepted:claim:c1",
+        "to": "root.research.r0.accepted:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.r0.candidate_a:claim:c1",
+        "to": "root.r0.candidate_a:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.r0.candidate_a:claim:c1",
+        "to": "root.r0.candidate_a:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.r0.candidate_b:claim:c1",
+        "to": "root.r0.candidate_b:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.r0.candidate_b:claim:c1",
+        "to": "root.r0.candidate_b:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.r0.judge:claim:c1",
+        "to": "root.r0.judge:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.r0.judge:claim:c1",
+        "to": "root.r0.judge:assumption:0",
+        "relation": "assumes"
+      },
+      {
+        "from": "root.r0.accepted:claim:c1",
+        "to": "root.r0.accepted:evidence:e1",
+        "relation": "supports"
+      },
+      {
+        "from": "root.r0.accepted:claim:c1",
+        "to": "root.r0.accepted:assumption:0",
+        "relation": "assumes"
+      }
+    ]
+  },
+  "artifacts": {
+    "root.analysis.r0.candidate_a": {
+      "path": "artifacts/root.analysis.r0.candidate_a.json",
+      "task": "root.analysis",
+      "revision": 0,
+      "label": "candidate_a"
+    },
+    "root.analysis.r0.candidate_b": {
+      "path": "artifacts/root.analysis.r0.candidate_b.json",
+      "task": "root.analysis",
+      "revision": 0,
+      "label": "candidate_b"
+    },
+    "root.analysis.r0.judge": {
+      "path": "artifacts/root.analysis.r0.judge.json",
+      "task": "root.analysis",
+      "revision": 0,
+      "label": "judge"
+    },
+    "root.research.facts.r0.candidate_a": {
+      "path": "artifacts/root.research.facts.r0.candidate_a.json",
+      "task": "root.research.facts",
+      "revision": 0,
+      "label": "candidate_a"
+    },
+    "root.analysis.repair1.r1.candidate_a": {
+      "path": "artifacts/root.analysis.repair1.r1.candidate_a.json",
+      "task": "root.analysis.repair1",
+      "revision": 1,
+      "label": "candidate_a"
+    },
+    "root.research.facts.r0.candidate_b": {
+      "path": "artifacts/root.research.facts.r0.candidate_b.json",
+      "task": "root.research.facts",
+      "revision": 0,
+      "label": "candidate_b"
+    },
+    "root.analysis.repair1.r1.candidate_b": {
+      "path": "artifacts/root.analysis.repair1.r1.candidate_b.json",
+      "task": "root.analysis.repair1",
+      "revision": 1,
+      "label": "candidate_b"
+    },
+    "root.research.facts.r0.judge": {
+      "path": "artifacts/root.research.facts.r0.judge.json",
+      "task": "root.research.facts",
+      "revision": 0,
+      "label": "judge"
+    },
+    "root.analysis.repair1.r1.judge": {
+      "path": "artifacts/root.analysis.repair1.r1.judge.json",
+      "task": "root.analysis.repair1",
+      "revision": 1,
+      "label": "judge"
+    },
+    "root.research.facts.r0.accepted": {
+      "path": "artifacts/root.research.facts.r0.accepted.json",
+      "task": "root.research.facts",
+      "revision": 0,
+      "label": "accepted"
+    },
+    "root.analysis.repair1.r1.accepted": {
+      "path": "artifacts/root.analysis.repair1.r1.accepted.json",
+      "task": "root.analysis.repair1",
+      "revision": 1,
+      "label": "accepted"
+    },
+    "root.research.r0.candidate_a": {
+      "path": "artifacts/root.research.r0.candidate_a.json",
+      "task": "root.research",
+      "revision": 0,
+      "label": "candidate_a"
+    },
+    "root.research.r0.candidate_b": {
+      "path": "artifacts/root.research.r0.candidate_b.json",
+      "task": "root.research",
+      "revision": 0,
+      "label": "candidate_b"
+    },
+    "root.research.r0.judge": {
+      "path": "artifacts/root.research.r0.judge.json",
+      "task": "root.research",
+      "revision": 0,
+      "label": "judge"
+    },
+    "root.research.r0.accepted": {
+      "path": "artifacts/root.research.r0.accepted.json",
+      "task": "root.research",
+      "revision": 0,
+      "label": "accepted"
+    },
+    "root.r0.candidate_a": {
+      "path": "artifacts/root.r0.candidate_a.json",
+      "task": "root",
+      "revision": 0,
+      "label": "candidate_a"
+    },
+    "root.r0.candidate_b": {
+      "path": "artifacts/root.r0.candidate_b.json",
+      "task": "root",
+      "revision": 0,
+      "label": "candidate_b"
+    },
+    "root.r0.judge": {
+      "path": "artifacts/root.r0.judge.json",
+      "task": "root",
+      "revision": 0,
+      "label": "judge"
+    },
+    "root.r0.accepted": {
+      "path": "artifacts/root.r0.accepted.json",
+      "task": "root",
+      "revision": 0,
+      "label": "accepted"
+    }
+  },
+  "peak_active": 2
+}
